@@ -1,3 +1,7 @@
+''' 
+The trained VGG16 model is capable of accurately classifying images of cats and dogs, while the Telegram bot allows for seamless integration and communication with users. 
+The implementation is made efficient through the use of PyTorch, a powerful deep learning framework, and the Telebot library, a user-friendly Telegram bot API.
+'''
 import os
 import urllib
 import telebot
@@ -6,7 +10,7 @@ import torchvision.transforms as transforms
 from PIL import Image
 from io import BytesIO
 
-token = '6002633936:AAG3pw2BpHaL_S3tWLv7RjT3CLJH6rQCcxA'
+token = 'TELEGRAM_BOT_TOKEN'
 # Загрузка модели VGG16
 model = torch.hub.load('pytorch/vision', 'vgg16', pretrained=True)
 model.eval()
